@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,800i,900');
+
+
+/* Start Style Globle */
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+.section-header{
+	padding: 50px 0;
+}
+/* End Style Globle */
+
+.navbar{
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	padding-bottom: 12px;
+	border-radius: 0;
+	transition: .5s
+}
+
+.navbar.navbg{
+	background: linear-gradient(to right, #333333, #07d1e4);
+	z-index: 999;
+	padding: 3px;
+}
+
+.navbar.navbg .nav li{ padding: 0; }
+.navbar.navbg li a{ color: #FFF }
+.navbar-brand{ padding: 0; }
+.navbar-brand img{ width: 150px; }
+.navbar.navbg .navbar-brand img{ margin-top: -9px; }
+
+.navbar .nav li{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 20px;
+	transition: .3s
+}
+
+.nav li a{
+	color: #FFF;
+	padding: 15px 0 10px 0;
+    margin: 0 12px;
+}
+
+.navbar.navbg .nav li a{
+	padding: 15px 0;
+}
+
+.nav li.active{ background-color: #1cb7be; }
+
+.nav>li>a:focus, 
+.nav>li>a:hover{
+	background: none;
+}
+
+.navbar .toggle{
+	float: right;
+	font-size: 40px;
+	color: #FFF;
+	display: none;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header{
+	height: 100vh;
+	position: relative;
+	background: url('../image/header.jpg') top center no-repeat;
+	background-size: cover;
+}
+
+.header .ovarlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, 
+		rgba(7, 209, 228, 0.42),
+		rgba(0, 0, 0, 0.77));
+
+}
+
+.header .content{
+	text-align: center;
+	color: #FFF;
+	margin-top: 240px;
+}
+
+.header .content .info{
+	margin-top: 100px;
+}
+
+.header .content p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.header .content p:first-child{
+	letter-spacing: 8px;
+}
+
+.header .content p:last-child{
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.header .content h1{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 50px;
+	position: relative;
+	padding: 5px 0;
+}
+
+.header .content h1:after{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 40%;
+	background-color: #FFF;
+	left: 30%;
+	z-index: 0;
+	top: 100%;
+}
+
+.header .content h1:before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 40%;
+	background-color: #FFF;
+	left: 30%;
+	z-index: 0;
+	top: 0;
+}
+
+.header .content h1 span{ color: #07d1e4 }
+
+.header .angle-down{
+	margin-top: 80px;
+	font-size: 40px;
+    text-align: center;
+    color: #FFF;
+}
+
+.header .angle-down span{
+	border: 2px solid #FFF;
+    padding: 6px 13px;
+    border-radius: 50%;
+    font-size: 50px
+}
+
+ /* End Header */
+
+ /* Start About */
+.about{
+	background-color: #f1f1f1
+}
+.about img{
+	width: 97%;
+}
+
+.about .info{
+	padding-top: 30px;
+}
+.about .info h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 4px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+.about .info h3:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 50px;
+	height: 2px;
+	background-color: #07d1e4;
+}
+.about .info p{
+	text-transform: capitalize;
+	line-height: 30px;
+}
+.about .skills h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 20px;
+	color: #20757d
+}
+.about .skills label{
+	width: 34%;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+ /* End About */
+
+ /* Start Services */
+ .services .ser {
+ 	text-align: center;
+ }
+.services .p-title{
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+ .services .ser span{
+ 	font-size: 40px;
+	background-color: #14afbd;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: #fff;
+    margin-top: 20px;
+ }
+
+ .services .ser h3{
+ 	text-transform: uppercase;
+ 	font-size: 18px;
+ 	font-weight: bold
+ }
+ /* End Services */
+
+ /* Start work */ 
+
+ .work .head{
+ 	background: url('../image/bb.jpg') top center no-repeat;
+ 	background-size: cover;
+ 	padding: 20px 0;
+ 	background-attachment: fixed;
+ }
+ .work .head h1{
+ 	color: #FFF
+ }
+ .work .head p{
+ 	color: #FFF
+ }
+
+ .work .head ul{
+ 	text-align: center;
+ 	background-color: #14afbd;
+ 	margin: 40px auto;
+ 	margin-bottom: -20px;
+ }
+
+.work .head ul li{
+	display: inline-block;
+	color: #FFF;
+	margin: 0 10px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.work .head ul li.active{
+	background-color: #00717b;
+	width: 160px;
+    margin:0 -10px;
+}
+
+.work .works{
+	margin-top: 20px;
+	width: 90%;
+	margin-left: 90px
+}
+
+.work .box{
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	width: 30%;
+	float: left;
+	margin-left: 10px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+
+.work .box .overlay .content{
+	position: absolute;
+    top: -183px;
+    text-align: center;
+    transition: .4s;
+    left: 10%;
+    background-color: rgba(28, 183, 190, 0.58);
+    border: 2px solid #FFF;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.work .box:hover .overlay .content{
+	top: 20px;
+	left: 10%;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+.work .box .overlay .content span{
+    border: 2px solid #FFF;
+    margin-left: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.work .box .overlay .content span:hover{
+	background-color: #16a085;
+	border-color: #16a085;
+}
+
+.work .box:hover .overlay .content h3{ 
+	font-weight: bold;
+ 	font-size: 18px;
+}
+
+.work .box:hover .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	transition: .4s
+
+}
+
+.work .box img{
+	width: 100%;
+	float: left;
+	height: 100%;
+}
+
+.work .box img:hover .overlay{
+	display: block;
+}
+
+/* End Work */
+
+/* Start Team */
+
+.team p.p-title{
+	margin-bottom: 30px;
+}
+
+.team .tem{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+
+}
+
+.team .tem .content{
+	position: absolute;
+    top: 261px;
+    left: 0;
+    width: 100%;
+    background: rgba(9, 203, 221, 0.7490196078431373);
+    text-align: center;
+    transition: .3s;
+}
+.team .tem:hover .content{
+	top: 22px;
+}
+.team .tem .content p:first-child{
+	padding-top: 22px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #FFF
+}
+
+.team .tem .content p:nth-child(2) {
+	font-size: 14px;
+	color: #FFF
+}
+
+.team .tem .content h3{
+	text-transform: uppercase;
+	position: relative;
+	font-weight: bold;
+	padding-bottom: 2px
+}
+
+.team .tem .content h3:after{
+	content: '';
+	position: absolute;
+	width: 90%;
+	left: 4%;
+	top: 100%;
+	height: 2px;
+	background-color: #DDD;
+}
+
+.team .tem .content .social{
+	width: 100%;
+	background: #464444;
+    padding: 10px;
+    position: relative;
+    bottom: -29px;
+    color: #FFF
+}
+
+.team .tem .content .social span{
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.team .tem .content .social span:hover{
+	color: #16a085
+}
+
+.team .tem:hover .ovarlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+}
+
+.team .tem img {
+	width: 100%;
+	height: 260px;
+}
+
+/* End Team */
+
+/* Start client */
+
+.client{
+	background-color: #ddd;
+	padding-bottom: 20px;
+}
+.client p{
+	margin-bottom: 20px;
+}
+.client img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* End Client */
+/* Start Contact */
+.contact .title-section{
+    margin-bottom: 50px;
+}
+.contact .single-social{
+    margin-bottom: 10px;
+}
+.contact .social .icon{
+    float: left;
+    margin-right: 20px;
+}
+.contact .social .icon i{
+    border: 1px solid;
+    padding: 8px;
+    width: 45px;
+    font-size: 27px;
+    color: #2e6da4;
+}
+.contact .social .info{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.contact .social .info span{
+	font-size: 11px;
+}
+.contact form{
+	margin-top: 30px;
+}
+.contact form input{
+    width: 100%;
+    height: 30px;
+	padding-left: 7px;
+}
+.contact form input:focus,
+.contact form textarea:focus{
+	border: 2px solid #2e6da4;
+}
+.contact form textarea{
+	width: 100%;
+	resize: none;
+	height: 80px;
+	padding-left: 7px;
+}
+.contact form input[type=submit]{
+	background: none;
+	border: 1px solid #2e6da4;
+	text-transform: capitalize;
+}
+
+	/* End Contact */
+.footer{
+	text-align: center;
+	background: #333;
+	color: #ffffff;
+	padding: 10px 0;
+}
+
+ .about,
+ .services,
+ .work,
+ .team,
+ .client{
+	padding-top: 50px;
+}
+
+.title-section{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #646464
+}
+
+.title-section span{
+	font-weight: 900;
+	color: #07d1e4;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+.title-section span:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 90%;
+	width: 100%;
+	height: 3px;
+	background-color: #07d1e4
+}
+.title-section span:before{
+	content: '';
+	position: absolute;
+	left: 15%;
+	top: 100%;
+	width: 75%;
+	height: 3px;
+	background-color: #a2f4ff
+}
+.p-title{
+	font-size: 15px;
+	text-transform: capitalize;
+}
+@media(min-width: 993px){
+	.p-title{
+		width: 60%;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 992px){
+
+	.content{ margin-top: 100px; }
+
+	.header .img{ width: 40%; }
+
+	.navbar .toggle{
+		display: block;
+		cursor: pointer;
+	}
+	.navbar .nav{
+		display: none;
+		position: absolute;
+		top: 100%;
+		background-color: #DDD;
+		width: 100%;
+		left: 0;
+		z-index: 99999999
+	}
+	.navbar .nav li{
+		float: none;
+		display: block;
+		padding: 0;
+		
+	}
+	.navbar .nav li a{
+		padding: 15px 10px;
+	}
+
+	.navbar .block{
+	display: block;
+	}
+
+	.work .works{
+	margin-top: 20px;
+	margin-left: 0;
+	}
+
+	.work .box{
+	width: 48%;
+	margin-bottom: 10px;
+	}
+	.work .box img{
+		width: 100%;
+		margin: auto;
+	}
+	.work .box:hover .overlay .content{
+	top: -80px;
+	}
+
+	.team .tem:hover .content{
+	top: -59px;
+	}
+	.work .box:hover .overlay .content{
+	top: 20px;
+	}
+}
+
+@media(max-width: 727px){
+.work .box{
+	width: 100%;
+	margin-bottom: 10px;
+	}
+	.work .works{
+	margin-top: 20px;
+	width: 90%;
+	margin: 20px auto;
+	}
+	.work .head ul li{
+		display: block;
+	}
+	.work .head ul li.active{
+		display: block;
+		width: auto;
+	}
+}

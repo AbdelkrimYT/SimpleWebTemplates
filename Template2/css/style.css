@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{font-family: 'Raleway', sans-serif;}
+ul {list-style: none;}
+.header-section{padding: 100px 0;}
+.header-title h1{text-transform: uppercase;font-weight: bold;color: #202737;}
+.header-title h1 span{color: #2790ec;}
+.header-title p{color: #777777}
+
+ /*************** Start Upper-navbar Style ******************/
+.alerts{background-color: #2790ec;color: #ffffff;padding: 10px 0;
+    overflow: hidden;}
+.alerts p{float: left;margin-bottom: 0;text-transform: uppercase;font-size: 22px;position: relative;}
+.alerts span{position: absolute;animation: right 1s infinite linear;top: -6px;right: -60px;font-size: 41px;}
+.alerts img{width: 100px;float: left;margin-left: 100px;}
+@keyframes right {
+    0%{right: -40px;}
+    50%{right: -90px;}
+    100%{right: -40px;}
+}
+@media (max-width: 767px){
+    .alerts p{
+        font-size: 18px;
+    }
+    .alerts span{
+        top: 90%;left: 0;
+    }
+    @keyframes right {
+        0%{left: 0px;}
+        50%{left: 50px;}
+        100%{left: 0px;}
+    }
+}
+.upper-navbar{padding: 10px 0 0 0;border-bottom: 1px solid #777777;color: #747474;text-transform: capitalize;}
+.upper-navbar ul.ul-right{text-align: right;}
+.upper-navbar ul.ul-left li i,
+.upper-navbar ul.ul-right li .fa-life-ring,
+.upper-navbar ul.ul-right li .fa-commenting-o{color: #2790ec;}
+.upper-navbar ul li{padding: 0 20px;position: relative;}
+.upper-navbar ul li.social i:hover{color: #2790ec;transition: .3s;}
+.upper-navbar ul li:after{content: '|';position: absolute;right: 0;top: 0;}
+.upper-navbar ul li:last-child:after{content: '';}
+.upper-navbar ul li i{margin-right: 10px;}
+.upper-navbar ul li{display: inline-block;}
+ /*************** End Upper-navbar Style ******************/
+ /*************** Start Logo-navbar Style ******************/
+.logo-navbar{padding: 30px 0 0 0;text-transform: capitalize;}
+.logo-navbar .logo h3{font-weight: bold;text-transform: uppercase;}
+.logo-navbar .information .single-info{display: inline-block;margin-left:30px;}
+.logo-navbar .information .single-info .icon{width: 40px;float: left;font-size: 30px;border: 1px solid #747474;text-align: center;border-radius: 5px;color: #2790ec;}
+.logo-navbar .information .single-info .info{padding-left: 50px;}
+.logo-navbar .information .single-info .info h4{font-size: 17px;color: #333;}
+.logo-navbar .information .single-info .info p{color: #777777;}
+ /*************** End Logo-navbar Style ******************/
+ /*************** Start main-navbar Style ******************/
+.navbar{background-color: #202737;position: relative;}
+.navbar:before{position: absolute;content: '';background-color: #2790ec;width: 30%;border-left: 2px solid #ffffff;height: 100%;right: 0;top: 0;}
+.main-navbar .navbar-collapse .nav-item{margin-left: 10px;text-transform: uppercase;}
+.main-navbar .navbar-collapse .nav-item a{color: #ffffff}
+.main-navbar .navbar-collapse .nav-item a:hover{color: #2790ec;}
+.navbar-nav{width: 100%;}
+.navbar-light .navbar-toggler {border: 1px solid #ffffff;}
+.navbar form input{border: 0;background: transparent;outline: none;position: relative;text-transform: capitalize;}
+.navbar form i{position: absolute;right: 40px;color: #ffffff;}
+.navbar .ul-right{position: absolute;right: 0;background-color: #2790ec;width: 30%;}
+.navbar-light .navbar-nav .active>.nav-link{color: #2790ec;}
+ /*************** End main-navbar Style ******************/
+/*************** Start Header Style ******************/
+.header .carousel-item{height: 780px;}
+.header .carousel-item .carousel-item{position: relative;}
+.img-fluid{width: 100%}
+.header .carousel-item:before{content: '';position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);}
+.header .carousel-item .carousel-caption{top: 30%;text-align: left;}
+.header .carousel-item .carousel-caption h3,
+.header .carousel-item .carousel-caption h1{text-transform: uppercase;}
+.header .carousel-item .carousel-caption h3{display: inline-block;font-size: 35px;background-color: #2790ec;font-weight: bold;padding: 10px;margin-bottom: 10px;}
+.header .carousel-item .carousel-caption h1{font-weight: bold;font-size: 60px; color: #2790ec}
+.header .carousel-item .carousel-caption p{text-transform: capitalize;margin-bottom: 20px;line-height: 35px;}
+.header .carousel-item .carousel-caption button{width: 150px;background: none;padding: 6px 10px;text-align: center;text-transform: uppercase;font-size: 14px;outline: none;border: 2px solid #202737;color: #ffffff;cursor: pointer;}
+.header .carousel-item .carousel-caption button.btn1{background-color: #202737;color: #ffffff;}
+.header .carousel-item .carousel-caption button.btn2:hover{background-color: #2790ec;transition: .3s;}
+.header .next-prev {display: block;width: 45px;right: 20%;position: absolute;bottom: 18px;}
+.header .carousel-control-prev,
+.header .carousel-control-next{right: -12px;opacity: 1}
+.header .carousel-control-prev span{background-color: #202737;padding: 10px;color: #FFF}
+.header .carousel-control-next span{background-color: #2790ec;padding: 10px;color: #FFF}
+
+@media (max-width: 767px) {
+    .header .carousel-item .carousel-caption{top: 10%;}
+    .header .carousel-item .carousel-caption h1{font-size: 30px;}
+    .header .carousel-item .carousel-caption h3{font-size: 27px}
+    .header .carousel-item .carousel-caption button{margin-bottom: 10px;}
+    .header .carousel-item{height: 680px;}
+}
+/*************** End Header Style ******************/
+
+/*************** Start About Style ******************/
+.about .our-mission{position: relative;background: url("../image/our-mission.jpg") top center;background-size: cover;padding: 10px;padding-bottom: 30px;}
+.about .our-mission:before{content: '';position: absolute;background-color: rgba(0,0,0,0.7);width: 100%;height: 100%;left: 0;top: 0;}
+.about .our-mission .carousel-item .icon{margin-right: 10px;}
+.about .our-mission .carousel-item i{font-size: 40px;background-color: #2790ec;padding: 10px;margin-right: 10px;float: left;}
+.about .our-mission .carousel-item .info{color: #ffffff;padding: 20px;}
+.about .our-mission .carousel-item .info h3{text-transform: uppercase;}
+.about .our-mission .carousel-item .info h3 span{font-size: 20px;text-transform: lowercase;}
+.about .our-mission .carousel-item p{margin-bottom: 0;margin-top: 20px;line-height: 33px;}
+.about .our-mission .carousel-indicators li{max-width: 10px;height: 10px;border-radius: 50%;}
+.about .our-mission .carousel-indicators li.active{background-color: #2790ec;}
+.about .our-mission .carousel-indicators{top: 95%;right: -100px;}
+.about .content h1 {text-transform: uppercase;font-weight: bold;margin-bottom: 30px;padding-bottom: 10px;position: relative;color: #292929;}
+.about .content h1 span{color: #2790ec;}
+.about .content h1:after{content: '';position: absolute;top: 100%;left: 0;width: 250px;height: 4px;background-color: #202737 ;}
+.about .content .item h4{text-transform: uppercase;font-weight: bold;font-size: 22px;color: #292929;}
+.about .content .item h4 span{color: #2790ec;}
+.about .content .item p{color: #777777;}
+/*************** End About Style ******************/
+/*************** Start Static Style ******************/
+.static{border: 2px solid #dbdbdb;padding: 20px;margin-bottom: 70px}
+.static .icon{float: left;margin-right: 10px;font-size: 40px;position: relative;border: 2px solid #2790ec;width: 70px;height: 60px;text-align: center;}
+.static h3{float: left;margin-right: 10px;font-weight: bold;padding-top: 10px;color: #2790ec;}
+.static .info p{padding-right: 30px;text-transform: capitalize;font-weight: bold;}
+/*************** End Static Style ******************/
+/*************** Start Help-You Style ******************/
+.help-you{background: url("../image/helpBG.jpg") top center;background-size: cover;position: relative;margin-top: 50px;}
+.help-you:before{content: '';position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);}
+.help-you h1,
+.help-you p{text-align: center;color: #ffffff;}
+.help-you h1{text-transform: uppercase;font-size: 32px;font-weight: bold;margin-bottom: 20px;}
+.help-you h1 span{color: #2790ec;}
+.help-you form input,
+.help-you form textarea{width: 100%;padding-left: 10px;text-transform: capitalize}
+.help-you form input{height: 30px;}
+.help-you form textarea{height: 80px;resize: none}
+.help-you .left .col-md-6{float: right;}
+.help-you form input[type=submit]{position: relative;background-color: #2790ec;border: 1px solid #2790ec;text-transform: uppercase;font-size: 15px;color: #ffffff;}
+.help-you form i{position: absolute;width: 30px;font-size: 20px;background-color: #ffffff;right: 15px;height: 100%;top: 0;padding-top: 5px;text-align: center;}
+
+/*************** End Help-You Style ******************/
+/*************** Start Service Style ******************/
+.service .single-service{text-align: center;position: relative;padding: 0 10px 10px;margin-bottom: 10px}
+.service .single-service .icon span{background-color: #2790ec;padding: 10px;color: #ffffff;width: 50px;font-size: 30px;}
+.service .single-service h3{text-transform: uppercase;font-weight: bold;font-size: 20px;margin-top: 20px;}
+.service .single-service:before{content: '';position: absolute;left: 0;top: 0;border: 1px dashed #2790ec;width: 100%;height: 100%;padding: 10px;}
+/*************** End Service Style ******************/
+/*************** Start Subscribe Style ******************/
+.subscribe{position: relative;background: url("../image/subsBg.jpg") top center;overflow: hidden;background-size: contain;padding: 20px 0;color: #fff;}
+.subscribe:before{content: '';background-color: #202737;width: 40%;height: 100%;left: -75px;top: 0;position: absolute;transform: skew(30deg);border-right: 4px solid #2790ec;}
+.subscribe form{padding-top: 25px;}
+.subscribe form input{width: 100%;height: 40px;border: 4px solid #2790ec;padding-left: 10px;position: relative;font-size: 14px;text-transform: capitalize;}
+.subscribe form a{position: absolute;right: 19px;top: 29px;padding: 4px;background-color: #202737;width: 130px;height: 41%;text-align: center;text-transform: uppercase;font-size: 14px;text-decoration: none;color: #ffffff;padding-top: 6px;}
+.subscribe p{text-transform: capitalize;}
+.subscribe h3{text-transform: uppercase;color: #2790ec;font-weight: bold;}
+@media (max-width: 767px) {
+    .subscribe:before {width: 100%;left: 2px;top: -90px;border-bottom: 4px solid #2790ec;transform: skew(0);}
+}
+/*************** End Subscribe Style ******************/
+/*************** Start Featured Style ******************/
+.featured h3{text-transform: uppercase;font-weight: bold;margin-bottom: 20px;}
+.featured h3 span,
+.featured ul li i{color: #2790ec;}
+.featured ul li{display: inline-block;width: 47%;margin-bottom: 10px;}
+.featured .video{position: relative;overflow: hidden;}
+.featured .video img{width: 100%;transition: .4s;}
+.featured .video span{position: absolute;top: -30%;font-size: 40px;color: #ffffff;border: 2px solid #ffffff;width: 70px;height: 69px;border-radius: 50%;text-align: center;padding-top: 11px;padding-left: 6px}
+.featured .video p{position: absolute;bottom: -30%;text-transform: uppercase;color: #ffffff;}
+.featured .video:hover:before{width: 100%;height: 100%;content: '';left: 0;top: 0;background-color: rgba(39, 144, 236, 0.83);position: absolute;}
+.featured .video:hover span{top: 40%;left: 40%;transition: .4s}
+.featured .video:hover p{bottom: 57%;left: 38%;transition: .4s}
+@media (max-width: 767px) {
+    .featured ul li{width: 100%;}
+}
+/*************** End Featured Style ******************/
+/*************** Start Portfolio Style ******************/
+.portfolio{overflow: hidden;}
+.portfolio.header-section{
+    padding-top: 60px;
+}
+.portfolio ul{text-align: center;position: relative;}
+.portfolio ul:after{content: '';position: absolute;top: 0;width: 54%;border-top: 1px solid;left: 24%;}
+.portfolio ul:before{content: '';position: absolute;bottom: 0;width: 54%;border-top: 1px solid;left: 24%;}
+.portfolio ul li{display: inline-block;text-transform: uppercase;padding: 8px 10px;}
+.portfolio ul li:hover{background-color: #2790ec;color: #ffffff;cursor: pointer;transition: .3s;}
+.portfolio .box{width: 30%;float: left;margin-left: 10px;overflow: hidden;position: relative;height: 200px;margin-bottom: 20px;}
+.portfolio .box:hover:before{content: '';position: absolute;background-color: rgba(39, 144, 236, 0.85);width: 100%;height: 100%;left: 0;top: 0;}
+.portfolio .overlay{position: absolute;top: -30%;left: 30%;text-align: center;color: #ffffff;text-transform: uppercase;}
+.portfolio .box:hover .overlay{top: 40%;left: 30%;transition: .4s;}
+.portfolio .box img{width: 100%;height: 100%;margin-bottom: 20px;border: 2px solid #eeeeee;}
+.portfolio .active{background-color: #2790ec;color: #ffffff;}
+@media (max-width: 767px) {
+    .portfolio ul li{display: block;}
+    .portfolio .box{width: 46%;}
+}
+@media (max-width: 547px){
+    .portfolio .box{width: 90%;}
+}
+/*************** End Portfolio Style ******************/
+/*************** Start Skills Style ******************/
+.skills{background: url("../image/video.jpg") top right no-repeat;background-size: contain;color: #ffffff;position: relative;}
+.skills:before{content: '';position: absolute;width: 56%;height: 100%;left: 0;top: 0;background-color: #202737;}
+.skills h4,
+.skills h3 {text-transform: uppercase;margin-bottom: 10px;}
+.skills p{line-height: 30px;}
+.skills h4{font-weight: bold;font-size: 20px;}
+.progressbar{position: relative;padding: 3px;}
+.progressbar:after{content: '';border: 1px solid #fff;position: absolute;width: 100%;height: 100%;top: 0;padding: 1px;}
+.skills .progres p{text-transform: uppercase;margin-bottom: 5px;font-size: 14px;}
+.percentCount{position: absolute;right: 0;top: -36px;font-weight: normal;}
+@media (max-width: 767px){
+    .skills:before{width: 100%;}
+}
+
+/*************** End Skills Style ******************/
+/*************** Start Teams Style ******************/
+.teams .single-team{position: relative;transition: .3s linear;}
+.teams .single-team img{width: 100%;height: 300px;}
+.teams .single-team .info{position: absolute;bottom: 37px;width: 100%;color: #FFF;text-align: center;}
+.teams .single-team .social,
+.teams .single-team p{background-color: rgba(39, 144, 236, 0.85);padding: 8px;text-transform: capitalize;position: absolute;width: 100%;z-index: -1;transition: .4s;top: 0;}
+.teams .single-team:hover p{top: 40px ;z-index: 1;transition: .4s all;}
+.teams .single-team:hover .social{top: -40px;z-index: 1;}
+.teams .single-team .social span{margin-left: 10px;}
+.teams .single-team .info h3{text-transform: uppercase;font-size: 20px;margin-bottom: 0;background-color: rgba(36, 45, 60, 0.95);padding: 10px;}
+/*************** End Teams Style ******************/
+/*************** Start Testimonial Style ******************/
+.quality{background: url("../image/helpBG.jpg") top center no-repeat;position: relative;background-size: cover;}
+.quality:before{content: '';position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(32, 39, 55, 0.93);}
+.quality .testimonial{padding: 50px 30px;background-color: #ffffff;text-align: center;position: relative;}
+.quality .testimonial:before{content: '';position: absolute;width: 97%;height: 97%;left: 8px;top: 7px;border: 2px dashed #acacac}
+.quality .testimonial h4,
+.quality .testimonial h3{text-transform: uppercase;font-weight: bold;}
+.quality .testimonial h4{font-size: 20px;color: #2790ec;margin-top: 30px;}
+.quality .testimonial h5{text-transform: uppercase;font-weight: bold;margin-top: 30px;}
+.quality .carousel-item{text-align: center;}
+.quality .carousel-item i{font-size: 40px;background-color: #202737;color: #ffffff;padding: 15px 20px;border-radius: 50%;margin: 30px 0;}
+.quality .carousel-item p span{color: #2790ec;text-transform: capitalize}
+.quality .next-prev{top: -109px;font-size: 33px;width: 50%;}
+.carousel-control-prev span, .carousel-control-next span{background: none;color: #202737;}
+.carousel-control-prev{left: 27%;top: -60%;}
+.carousel-control-next{right: 27%;top: -60%;}
+.quality .content{color: #ffffff;}
+.quality .content .item{margin-bottom: 33px;}
+.quality .content .item .icon{width: 56px;float: left;font-size: 30px;background-color: #ffffff;color: #202737;border-radius: 50%;text-align: center;margin-right: 10px;padding: 4px;position: relative;height: 55px;}
+.quality .content .item .icon:before{content: '';position: absolute;width: 94%;height: 94%;border: 1px solid #202737;border-radius: 50%;left: 1px;top: 2px;}
+.quality .content .item .info{padding-left: 50px;padding-top: 4px;}
+.quality .content h6{text-transform: uppercase;}
+.quality .content h3{text-transform: uppercase;}
+.quality .content>p{margin: 30px 0;}
+.quality .content h3 span{color: #2790ec;font-weight: bold;}
+.quality .content .item h5{text-transform: uppercase;font-size: 16px;font-weight: bold;}
+/*************** End Testimonial Style ******************/
+/*************** Start news Style ******************/
+.news .single-news .img{position: relative;}
+.news .single-news .img .time{position: absolute;}
+.news .single-news .img .time span,
+.news .single-news .img .time p{color: #fff;padding: 10px;width: 50px;text-align: center;}
+.news .single-news .img .time span{background-color: #2790ec;font-size: 23px;}
+.news .single-news .img .time p{background-color: #202737;}
+.news .single-news img{width: 100%;}
+.news .single-news .img ul{position: absolute;bottom: 0;background-color: #2790ec;color: #fff;text-align: center;width: 100%;padding: 10px;margin-bottom: 0;text-transform: capitalize;font-size: 14px;}
+.news .single-news .img ul li {display: inline-block;list-style: none;margin-left: 10px;}
+.news .single-news .info{padding: 10px 0;}
+.news .single-news .info h4{text-transform: uppercase;font-size: 17px;font-weight: bold;line-height: 27px;}
+.news .single-news .info p{color: #777777}
+.news .single-news .info a{text-transform: capitalize;font-style: italic;}
+
+/*************** End news Style ******************/
+/*************** Start Client Style ******************/
+.client{position: relative;background: url("../image/helpBG.jpg") center no-repeat;background-size: cover;padding: 50px 0;}
+.client:before{content: '';position: absolute;background-color: rgba(39, 144, 236, 0.81);top: 0;left: 0;width: 100%;height: 100%;}
+.client .single-client img{width: 100%;}
+/*************** End Client Style ******************/
+/*************** Start footer Style ******************/
+.footer{padding-top: 50px;background-color: #202737;}
+.footer .logo{margin-bottom: 50px;}
+.footer .logo h2{text-transform: uppercase;font-weight: bold;color: #FFF;}
+.footer h3{text-transform: uppercase;font-weight: bold;color: #FFF;font-size: 21px;position: relative;padding-bottom: 10px;margin-bottom: 20px}
+.footer .logo span{color: #2790ec;border-bottom: 2px solid #2790ec}
+.footer .contact{color: #fff;}
+.footer .contact .item{margin-bottom: 20px}
+.footer .contact .icon{width: 50px;border: 1px solid #fff;text-align: center;font-size: 30px;float: left;margin-right: 10px;}
+.footer .contact .info{text-transform: capitalize;}
+.footer .about{color: #ffffff;}
+.footer  h3:after{position: absolute;content: '';width: 100px;height: 2px;left: 0;top: 100%;background-color: #2790ec;}
+.footer .about .social span{border: 1px solid #ffffff;padding: 12px;border-radius: 50%;width: 42px;text-align: center;height: 41px;margin-left: 5px;transition: .3s;}
+.footer .about .social span:hover{background-color: #2790ec;cursor: pointer;}
+.footer .links{color: #ffffff;}
+.footer .links ul li{text-transform: capitalize;margin-bottom: 10px;font-size: 15px}
+.footer .links ul li:hover{color: #2790ec;cursor: pointer;transition: .3s;}
+.footer .instgram img{width: 48px;margin-left: 2px;height: 50px;margin-bottom: 10px;}
+.footer .buttom{color: #ffffff;border-top: 2px solid #2790ec;padding: 10px 0;margin-top: 30px;}
+.footer .menu{text-align: right;}
+.footer .menu li{display: inline-block;margin-left: 10px;text-transform: capitalize;}
+@media (max-width: 767px) {
+    .single-client ,.single-news ,.single-team, .single-info, .single-service,.single-footer,.single-static{
+        margin-bottom: 20px;
+    }
+    .quality .testimonial{
+        margin-bottom: 20px;
+    }
+}
+.fixed-top{
+    position: fixed;
+    width: 100%;
+}
